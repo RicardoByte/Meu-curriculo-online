@@ -3,135 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Online | Ricardo de Paula</title>
+    <title>Currículo | Ricardo de Paula</title>
     
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Ícones do Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- CSS Externo -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light text-dark">
+<body>
 
-<div class="container py-5">
-    <!-- CABEÇALHO / PERFIL -->
-    <div class="row align-items-center mb-5 text-center text-md-start">
-        <div class="col-md-3 text-center">
-            <!-- Insira o link da sua foto do GitHub ou LinkedIn no src abaixo -->
-            <img src="https://github.com/github.png" alt="Foto de Perfil" class="profile-img rounded-circle mb-3 shadow">
-        </div>
-        <div class="col-md-7">
-            <h1 class="display-5 fw-bold">Ricardo de Paula Garcia da Silva Filho</h1>
-            <h2 class="text-primary h4">Estudante de Engenharia de Software | Desenvolvedor</h2>
-            <p class="lead">Universidade de Rio Verde</p>
-        </div>
-        <div class="col-md-2 text-md-end text-center mt-3 mt-md-0">
-            <button id="themeToggle" class="btn btn-outline-secondary">
-                <i class="bi bi-moon-fill"></i> Modo Noturno
-            </button>
+<div class="top-bar"></div>
+
+<div class="container py-4">
+    <div class="header-card mb-4 text-center">
+        <img src="Foto de perfil/Foto-curriculo.jpeg" alt="Foto de Perfil" class="profile-img">
+        <h1 class="main-title">Ricardo de Paula</h1>
+        <h2 class="sub-title">Engenharia de Software | Universidade de Rio Verde</h2>
+        <p class="location-text">Santa Helena de Goiás, GO</p>
+        
+        <div class="social-links mt-3">
+            <a href="mailto:ricardodepaula.dnf@gmail.com" class="btn-2012">E-mail</a>
+            <a href="https://www.linkedin.com/in/ricardopaulatech/" target="_blank" class="btn-2012">LinkedIn</a>
+            <a href="https://github.com/RicardoByte" target="_blank" class="btn-2012">GitHub</a>
         </div>
     </div>
 
-    <!-- SEÇÃO SOBRE MIM -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card shadow-sm border-0">
-                <div class="card-body">
-                    <h3 class="card-title text-primary"><i class="bi bi-person-lines-fill"></i> Sobre mim</h3>
-                    <p class="card-text mt-3">
-                        Sou estudante de Engenharia de Software na Universidade de Rio Verde. 
-                        Tenho forte interesse em desenvolvimento de software, arquitetura de sistemas e infraestrutura. Sou entusiasta do ecossistema Linux e possuo experiência prática na criação de ferramentas voltadas para linha de comando e experimentação com tecnologias web em 3D.
-                    </p>
+    <div class="content-box mb-4">
+        <div class="box-header">
+            <h3>Sobre Mim</h3>
+        </div>
+        <div class="box-body">
+            <p>
+                Sou estudante do 6º período de Engenharia de Software na Universidade de Rio Verde. 
+                Tenho forte interesse em desenvolvimento back-end, arquitetura de sistemas e infraestrutura. 
+                Sou entusiasta do ecossistema Linux (desde customização de Kernel até conteinerização com Podman e Distrobox) e possuo experiência prática na criação de ferramentas CLI e APIs estruturadas.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-box mb-4">
+        <div class="box-header">
+            <h3>Habilidades Técnicas</h3>
+        </div>
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <span class="skill-label">Go, C/C++, C#</span>
+                    <div class="progress-2012">
+                        <div class="progress-bar-2012 blue-bar" style="width: 80%;"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SEÇÃO HABILIDADES / CONHECIMENTOS -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card shadow-sm border-0">
-                <div class="card-body">
-                    <h3 class="card-title text-primary mb-4"><i class="bi bi-tools"></i> Habilidades & Tecnologias</h3>
-                    
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <strong>Linguagens (Go, C/C++, C#)</strong>
-                            <div class="progress mt-1" style="height: 20px;">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <strong>Linux (Kernel, Customização, Dual-boot)</strong>
-                            <div class="progress mt-1" style="height: 20px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <strong>Banco de Dados (SQL / PostgreSQL)</strong>
-                            <div class="progress mt-1" style="height: 20px;">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <strong>Containers (Podman / Distrobox)</strong>
-                            <div class="progress mt-1" style="height: 20px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                            </div>
-                        </div>
-                        
-                        </div>
+                <div class="col-md-6 mb-3">
+                    <span class="skill-label">Linux (Kernel & Customização)</span>
+                    <div class="progress-2012">
+                        <div class="progress-bar-2012 green-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <span class="skill-label">Infraestrutura (Docker/Podman/Distrobox)</span>
+                    <div class="progress-2012">
+                        <div class="progress-bar-2012 blue-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <span class="skill-label">Front-end (HTML, CSS, JS, Bootstrap)</span>
+                    <div class="progress-2012">
+                        <div class="progress-bar-2012 orange-bar" style="width: 75%;"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- SEÇÃO EXPERIÊNCIAS E PROJETOS -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card shadow-sm border-0">
-                <div class="card-body">
-                    <h3 class="card-title text-primary"><i class="bi bi-briefcase-fill"></i> Projetos e Experiência</h3>
-                    <ul class="list-group list-group-flush mt-3 border-top">
-                        <li class="list-group-item bg-transparent">
-                            <strong>Escritório de Contabilidade</strong> (Atual)
-                            <p class="mb-1 text-muted">Atendimento direto a clientes e rotinas administrativas.</p>
-                        </li>
-                        <li class="list-group-item bg-transparent">
-                            <strong>Projeto Orbit</strong> (Desenvolvimento Pessoal)
-                            <p class="mb-1 text-muted">Ferramenta CLI desenvolvida em Go para gerenciamento de configurações locais.</p>
-                            <!-- Interatividade: Botão de Mostrar/Ocultar -->
-                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="toggleDetails('orbit-details')">Ver mais detalhes</button>
-                            <div id="orbit-details" class="mt-2 text-muted" style="display: none; border-left: 3px solid #0d6efd; padding-left: 10px;">
-                                <small>O repositório estrutura arquivos e ambientes de desenvolvimento voltados para alta performance utilizando a linguagem Go.</small>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="content-box mb-4">
+        <div class="box-header">
+            <h3>Experiência e Projetos</h3>
+        </div>
+        <div class="box-body">
+            <ul class="resume-list">
+                <li>
+                    <h4>Escritório de Contabilidade</h4>
+                    <span class="job-title">Auxiliar Administrativo</span>
+                    <p>Atendimento direto a clientes, organização de documentos e rotinas administrativas do escritório.</p>
+                </li>
+                <li>
+                    <h4>Projeto Orbit</h4>
+                    <span class="job-title">Desenvolvedor Back-end (Go)</span>
+                    <p>Ferramenta de linha de comando (CLI) desenvolvida em Go. Focada em indexação de arquivos, hashing e persistência JSON para sincronização de vaults (Obsidian) em rede local.</p>
+                    <button class="btn-2012-small mt-2" onclick="toggleDetails('orbit-details')">Ver mais detalhes</button>
+                    <div id="orbit-details" class="details-panel mt-2" style="display: none;">
+                        <p class="text-muted">O repositório estrutura arquivos e ambientes de desenvolvimento voltados para alta performance. Prática intensiva de arquitetura de pacotes e módulos em Go.</p>
+                    </div>
+                </li>
+                <li>
+                    <h4>Conteinerização com Docker/Podman/Distrobox</h4>
+                    <span class="job-title">Projeto Pessoal</span>
+                    <p>Atualmente no desenvolvimento de um homelab pessoal para testes focados em conteinerização e orquestração de serviços utilizando Docker, podman e NGIX para camada de segurança.</p>
+                </li>
+            </ul>
         </div>
     </div>
-
-    <!-- SEÇÃO CONTATO -->
-    <div class="row">
-        <div class="col-12 text-center mt-3">
-            <h3 class="text-primary mb-3">Contato</h3>
-            <p class="text-muted">Entre em contato !!!</p>
-            <a href="mailto:ricardodepaula.dnf@gmail.com" class="btn btn-outline-danger m-1"><i class="bi bi-envelope-fill"></i> E-mail</a>
-            <a href="https://www.linkedin.com/in/ricardopaulatech/" target="_blank" class="btn btn-outline-primary m-1"><i class="bi bi-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/RicardoByte" target="_blank" class="btn btn-outline-dark m-1" id="github-btn"><i class="bi bi-github"></i> GitHub</a>
-        </div>
+    
+    <div class="footer-2012 text-center mt-4 mb-4">
+        <p>&copy; 2012-2026 RicardoByte. Todos os direitos reservados.</p>
     </div>
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Script Externo -->
 <script src="script.js"></script>
-
 </body>
 </html>
