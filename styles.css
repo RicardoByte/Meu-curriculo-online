@@ -1,4 +1,4 @@
-/* Reset básico e Fontes */
+
 body {
     /* Clássica textura de ruído/papel de parede sutil da Web 2.0 */
     background-color: #e9eaed;
@@ -13,7 +13,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-/* Faixa superior estilo 2012 */
+
 .top-bar {
     height: 5px;
     background: linear-gradient(to right, #4cb8c4, #3cd3ad);
@@ -32,7 +32,7 @@ h1, h2, h3, h4 {
     margin-top: 40px; /* Espaço para a foto subir */
 }
 
-/* Foto redonda com borda grossa (Estilo avatar de fórum/skype) */
+/* Foto redonda com borda grossa e sombra */
 .profile-img {
     width: 120px;
     height: 120px;
